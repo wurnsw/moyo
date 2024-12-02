@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://wurnsw.github.io/moyo",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build --public-url /moyo/ src/index.html",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^1.12.3",
     "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
