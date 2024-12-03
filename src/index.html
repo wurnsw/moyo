@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./sass/main.scss">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <svg class="header__logo-icon">
+            <use href="./images/logo.svg"></use>
+          </svg>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item is-active">
+              <a href="#apple" class="nav__link"> Apple </a>
+            </li>
+            <li class="nav__item">
+              <a href="#samsung" class="nav__link"> Samsung </a>
+            </li>
+            <li class="nav__item">
+              <a href="#smartphones" class="nav__link"> Smartphones </a>
+            </li>
+            <li class="nav__item">
+              <a href="#laptops&computers" class="nav__link">
+                Laptops & Computers
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#gadgets" class="nav__link"> Gadgets </a>
+            </li>
+            <li class="nav__item">
+              <a href="#tablets" class="nav__link"> Tablets </a>
+            </li>
+            <li class="nav__item">
+              <a href="#photo" class="nav__link"> Photo </a>
+            </li>
+            <li class="nav__item">
+              <a href="#video" class="nav__link"> Video </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__card card">
+            <img
+              class="card__image"
+              srcset="
+                ./images/product--160.webp 1x,
+                ./images/product--160.webp 2x,
+                ./images/product--160.webp 3x
+              "
+              src="./images/product--160.webp"
+              alt="APPLE A1419 iMac 27"
+            />
+            <div class="card__info">
+              <h3 class="card__title">
+                APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+              </h3>
+              <p class="card__code">Product code: 195434</p>
+              <div class="card__rating rating">
+                <div class="rating__star"></div>
+                <div class="rating__star"></div>
+                <div class="rating__star"></div>
+                <div class="rating__star"></div>
+                <div class="rating__star"></div>
+                <p class="rating__reviews">Reviews: 5</p>
+              </div>
+              <div class="card__price price">
+                <p class="price__tag">Price:</p>
+                <p class="price__cost">$2,199</p>
+              </div>
+              <button class="card__button">Buy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
