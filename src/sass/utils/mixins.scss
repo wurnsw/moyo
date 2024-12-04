@@ -1,0 +1,9 @@
+@mixin mainTypography {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@mixin secondaryTypography {
+  font-size: 10px;
+  line-height: 14px;
+}

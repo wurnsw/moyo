@@ -1,0 +1,18 @@
+.price {
+  display: flex;
+  justify-content: space-between;
+  &__tag {
+    font-size: 12px;
+    line-height: 18px;
+
+    color: $color-grey;
+  }
+
+  &__cost {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+
+    color: $font-color;
+  }
+}
