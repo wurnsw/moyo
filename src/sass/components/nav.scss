@@ -1,15 +1,26 @@
 .nav {
   &__list {
     display: flex;
+
+    align-items: center;
     gap: 20px;
   }
 
-  &__link {
-    padding: 23px 0;
+  &__item {
+    display: flex;
+    align-items: center;
+
+    height: 60px;
 
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     text-transform: uppercase;
+
+    transition: 250ms;
+
+    &:hover {
+      color: $color-blue;
+    }
   }
 }
