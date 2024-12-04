@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    padding: 23px 0;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+}

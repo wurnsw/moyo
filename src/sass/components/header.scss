@@ -1,0 +1,24 @@
+.header {
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px #0000000d;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-image {
+    display: flex;
+
+    height: 40px;
+    width: 40px;
+  }
+
+  &__nav {
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+  }
+}
