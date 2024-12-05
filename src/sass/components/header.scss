@@ -1,15 +1,19 @@
 .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: none;
 
-  border-bottom: 1px solid transparent;
-  box-shadow: 0px 2px 4px 0px #0000000d;
-
-  &__logo-image {
+  @include onTablet {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    height: 40px;
-    width: 40px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px #0000000d;
+
+    &__logo-image {
+      display: flex;
+
+      height: 40px;
+      width: 40px;
+    }
   }
 }

@@ -14,7 +14,9 @@
     line-height: 14px;
     text-transform: uppercase;
 
-    transition: 250ms;
+    transition: 300ms;
+
+    cursor: pointer;
 
     &:hover {
       color: $color-blue;

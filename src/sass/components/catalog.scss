@@ -3,8 +3,20 @@
     margin: 50px auto 0;
 
     display: grid;
-    grid-template-columns: repeat(4, 198px);
+    grid-template-columns: 200px;
     justify-content: center;
     gap: 46px 48px;
+
+    @include onMobile {
+      grid-template-columns: repeat(2, 200px);
+    }
+
+    @include onTablet {
+      grid-template-columns: repeat(3, 200px);
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(4, 200px);
+    }
   }
 }

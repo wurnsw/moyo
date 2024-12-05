@@ -1,3 +1,21 @@
+@mixin onMobile {
+  @media screen and (min-width: 488px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin mainTypography {
   font-size: 12px;
   font-weight: 500;
